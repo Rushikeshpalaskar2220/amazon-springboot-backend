@@ -177,9 +177,4 @@ axios.post("http://localhost:8082/users/login", {
 
 
 
-✔️ A **PPT for your project review**
-✔️ A **diagram** of the architecture
-✔️ A **video script** for explaining the project
-✔️ A **GitHub wiki page**
 
-Just say the word! 😄🔥
