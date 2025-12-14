@@ -29,6 +29,19 @@ public class Product {
 	@NotNull
 	private Double price;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    @Column(columnDefinition = "TEXT")
+    private String imageUrl;
+
+
+
 	public Double getPrice() {
 		return price;
 	}

@@ -21,6 +21,16 @@ public class ProductDTO {
 
 	private Double price;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    private String imageUrl;
+
 	public Double getPrice() {
 		return price;
 	}
@@ -71,4 +81,9 @@ public class ProductDTO {
 	public String getSubcategoryName() {
 		return subcategoryName;
 	}
+
+//    public String getImageUrl(){ return imageUrl;}
+//    public void setImageUrl(String imageUrl){this.imageUrl=imageUrl;}
+//
+
 }

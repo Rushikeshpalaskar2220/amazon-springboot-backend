@@ -46,6 +46,7 @@ public class OrderService {
 			item.setQuantity(itemDTO.getQuantity());
 			item.setPrice(itemDTO.getPrice());
 			items.add(item);
+            itemDTO.setImageUrl(product.getImageUrl());
 		}
 
 		order.setItems(items);
@@ -71,6 +72,7 @@ public class OrderService {
 				itemDTO.setProductName(product.getName());
 				itemDTO.setQuantity(item.getQuantity());
 				itemDTO.setPrice(item.getPrice());
+                itemDTO.setImageUrl(product.getImageUrl());
 				itemDTOs.add(itemDTO);
 			}
 

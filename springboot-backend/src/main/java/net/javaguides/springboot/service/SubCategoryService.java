@@ -47,6 +47,7 @@ public class SubCategoryService {
 			dto.setSubcategoryId(subCategory.getId());
 			dto.setSubcategoryName(subCategory.getName());
 			dto.setPrice(product.getPrice());
+            dto.setImageUrl(product.getImageUrl());
 
 			productDTOs.add(dto);
 		}
@@ -104,6 +105,7 @@ public class SubCategoryService {
 			prodDTO.setSubcategoryId(subCategory.getId());
 			prodDTO.setSubcategoryName(subCategory.getName());
 			prodDTO.setPrice(product.getPrice());
+            prodDTO.setImageUrl(product.getImageUrl());
 			productDTOs.add(prodDTO);
 		}
 

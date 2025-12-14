@@ -49,6 +49,7 @@ public class ProductService {
 		product.setSubcategory(subCategory);
 		product.setPrice(dto.getPrice());
 		dto.setPrice(product.getPrice());
+        product.setImageUrl(dto.getImageUrl());
 		return toDTO(productsRepository.save(product));
 	}
 
@@ -61,6 +62,7 @@ public class ProductService {
 
 		product.setName(dto.getName());
 		product.setDescription(dto.getDescription());
+        product.setImageUrl(dto.getImageUrl());
 		product.setSubcategory(subCategory);
 
 		return toDTO(productsRepository.save(product));
@@ -79,6 +81,7 @@ public class ProductService {
 		dto.setDescription(product.getDescription());
 		dto.setSubcategoryId(product.getSubcategory().getId());
 		dto.setSubcategoryName(product.getSubcategory().getName());
+        dto.setImageUrl(product.getImageUrl());
 		dto.setPrice(product.getPrice());
 
 		return dto;

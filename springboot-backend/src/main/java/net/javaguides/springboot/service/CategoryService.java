@@ -53,6 +53,7 @@ public class CategoryService {
 				product.setName(prodDTO.getName());
 				product.setDescription(prodDTO.getDescription());
 				product.setPrice(prodDTO.getPrice());
+                product.setImageUrl(prodDTO.getImageUrl());
 				product.setSubcategory(subCategory); // Set parent
 				productEntities.add(product);
 			}
@@ -101,6 +102,7 @@ public class CategoryService {
 				product.setName(prodDTO.getName());
 				product.setDescription(prodDTO.getDescription());
 				product.setPrice(prodDTO.getPrice());
+                product.setImageUrl(product.getImageUrl());
 				product.setSubcategory(subCategory);
 				updatedProducts.add(product);
 			}
@@ -145,6 +147,7 @@ public class CategoryService {
 				prodDTO.setDescription(prod.getDescription());
 				prodDTO.setSubcategoryId(sub.getId());
 				prodDTO.setPrice(prod.getPrice());
+                prodDTO.setImageUrl(prod.getImageUrl());
 				prodDTO.setSubcategoryName(sub.getName());
 				prodDTOs.add(prodDTO);
 			}
@@ -169,6 +172,7 @@ public class CategoryService {
 				dto.setDescription(product.getDescription());
 				dto.setSubcategoryId(sub.getId());
 				dto.setPrice(product.getPrice());
+                dto.setImageUrl(product.getImageUrl());
 				dto.setSubcategoryName(sub.getName());
 				productDTOs.add(dto);
 			}

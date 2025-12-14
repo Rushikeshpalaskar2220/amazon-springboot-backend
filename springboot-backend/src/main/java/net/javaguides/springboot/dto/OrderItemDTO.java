@@ -8,6 +8,16 @@ public class OrderItemDTO {
 	private double price;
 	private String productName;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    private String imageUrl;
+
 	public String getProductName() {
 		return productName;
 	}
